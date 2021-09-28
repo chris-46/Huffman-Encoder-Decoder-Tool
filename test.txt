@@ -1,0 +1,36 @@
+i) All lower case.
+	Input line: abcdef
+
+	input text   --->  ABCDEF  <---
+	encoded text ---]  0111101011000010110101110011000101  [---
+	plain text   ===>  ABCDEF  <===
+
+ii) Mix of upper and lower case.
+	Input line: aBcDeFg
+
+	input text   --->  ABCDEFG  <---
+	encoded text ---]  0111101011000010110101110011000101000100  [---
+	plain text   ===>  ABCDEFG  <===
+
+
+iii) Mix of upper and lower case with spaces.
+Input line: Algorithms and Data Structures
+
+	input text   --->  ALGORITHMS AND DATA STRUCTURES  <---
+	encoded text ---]  011110111010001000110101000011000000000110010010100110111101010010111101011101111000001111101001000001000001010001011000000101001000001101001  [---
+	plain text   ===>  ALGORITHMS AND DATA STRUCTURES  <===
+
+
+iv)  Mix of upper and lower case with spaces and non-alphabetical characters.
+	Input line: CPSC 2150 is taught by Dr. Gladys Monagan
+
+	input text   --->  CPSC      IS TAUGHT BY DR  GLADYS MONAGAN  <---
+	encoded text ---]  00101101110010100100101111111101100010011000001111001010000100000110000101011000101101101011101000110001000111010111101011101011010100110010010110101010011110001000111101010  [---
+	plain text   ===>  CPSC      IS TAUGHT BY DR  GLADYS MONAGAN  <===
+	
+v) Only Symbols/non-alphabetical characters to showcase limitations. (Note that because the ' ' has a high hardcoded frequency value, this otherwise long string is shortened to the number of chars.
+	Input line: %#%$^%&%^*^%%$#&%^&&*)_(($%^&*()*(*^%^&*%()<>?>?<><?<?><?><???
+
+	input text   --->                                                                  <---
+	encoded text ---]  11111111111111111111111111111111111111111111111111111111111111  [---
+	plain text   ===>
